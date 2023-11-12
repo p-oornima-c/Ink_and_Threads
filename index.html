@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inks & Threads</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/ac7cc78f64.js" crossorigin="anonymous"></script>
+<script>
+
+    var tabl = document.getElementsByClassName("tablinks");
+    var tabc = document.getElementsByClassName("tabcontents");
+
+    function opentab(tabname){
+        for(tablink of tabl){
+            tablink.classList.remove("activelink");
+        }
+        for(tabcontent of tabc){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelink");
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img id="logo" style="width: 400px; height: 100px; margin-left: 10%;" src="images/logo.png">
+            <ul class="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>We Print What you Dream</h1>
+            <p>Excellent designers works to create Excellent designs</p>
+        </div>
+    </div>
+</div>
+<!----------------about--------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col1">
+                <h1 class="subtitle" style="padding: 10px;">About Us</h1>
+                <p>
+                    <br><br>At Inks & Threads, we believe that a T-shirt is more than just a piece of clothing. It's a blank canvas waiting to be filled with your creativity, your personality, and your message.
+                    <br><br>We're passionate about helping people express themselves through custom-printed T-shirts. We offer a wide variety of high-quality T-shirts, printing options, and design tools to help you create the perfect T-shirt for any occasion.
+                    <br><br>Whether you're looking for a unique gift for a friend or family member, or you want to create custom T-shirts for your business or event, we're here to help.
+                </p>
+            </div>
+            <div class="col2">
+                <div class="tabtitles">
+                    <p class="tablinks activelink" onclick="opentab('mission')">Our Mission</p>
+                    <p class="tablinks"  onclick="opentab('values')">Our Values </p>
+                </div>
+                <div class="tabcontents activetab" id="mission">
+                    <p>
+                        Our mission is to make it easy and affordable for anyone to create their own custom-printed T-shirts. We want to empower people to express themselves and share their ideas with the world.
+                    </p>
+                </div>
+                <div class="tabcontents" id="values">
+                    <ul>
+                        <li><b>Quality:</b> We use only the highest quality T-shirts and printing methods to ensure that your custom T-shirts will last.</li>
+                        <li><b>Customer Service</b>: We're committed to providing our customers with the best possible service. We're always here to answer your questions and help you create the perfect T-shirts.</li>
+                        <li><b>Creativity:</b> We believe that everyone has the potential to be creative. We want to provide you with the tools and resources you need to express your creativity and make your own unique T-shirts.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------services---------------->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle" align="center">Our Services</h1><br>
+        <p align="center" style="padding: 5px 100px;">We are a team of experienced professionals who are passionate about custom t-shirt printing. We use the latest printing technology and offer high-quality products at competitive prices. We are also committed to providing our customers with excellent customer service.</p>
+        <div class="services-list">
+            <div class="service">
+                <img src="images/s1.jpg">
+                <div class="layer">
+                    <h3>Screen Printing</h3>
+                    <p>Screen printing is a traditional printing method that uses a stencil to apply ink to a t-shirt. This method is ideal for creating large, detailed designs.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/s2.jpg">
+                <div class="layer">
+                    <h3>Direct-to-Garment Printing</h3>
+                    <p>Direct-to-garment printing is a newer printing method that uses inkjet technology to apply ink directly to a t-shirt. This method is ideal for creating small, intricate designs.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/s3.jpg">
+                <div class="layer">
+                    <h3>Heat Transfer Printing</h3>
+                    <p>Heat transfer printing is a method of applying a pre-printed design to a t-shirt using heat and pressure. This method is ideal for creating small, simple designs.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/s4.jpg">
+                <div class="layer">
+                    <h3>Sublimation Printing</h3>
+                    <p>Sublimation printing is a method of printing that uses heat and pressure to transfer a design onto a polyester t-shirt. This method is ideal for creating designs that are full-color and vibrant.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/s5.jpg">
+                <div class="layer">
+                    <h3>Embroidery</h3>
+                    <p>Embroidery is a method of using needle and thread to sew a design onto a t-shirt. This method is ideal for creating designs that are textured and durable.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/s6.jpg">
+                <div class="layer">
+                    <h3>Rhinestones</h3>
+                    <p>Rhinestones are small, sparkly stones that can be applied to a t-shirt to create a glamorous look.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/s7.jpg">
+               <div class="layer">
+                <h3>Flocking</h3>
+                <p>Flocking is a method of applying a soft, fuzzy material to a t-shirt to create a velvety texture.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+            <div class="service">
+                <img src="images/s8.jpg">
+                <div class="layer">
+                    <h3>Foil printing</h3>
+                    <p>Foil printing is a method of applying a metallic foil to a t-shirt to create a shiny, luxurious look.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/s9.jpg">
+                <div class="layer">
+                    <h3>Glow-in-the-Dark Printing</h3>
+                    <p>Glow-in-the-dark printing is a method of applying a phosphorescent material to a t-shirt that will glow in the dark.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------ContactUs-------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <p><i>Thank You for visiting.</i></p><br>
+                <h1 class="subtitle">Contact</h1><br>
+                <p>Kindly contact us if you want to avail our services.</p><br>
+                <p><i class="fa-solid fa-envelope"></i>inkandthreads@gmail.com</p>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images//Brochure.pdf" download><button id="brochure">Download Brochure</button></a>
+            </div>
+            <div class="right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email"required>
+                    <textarea name="Message" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+                    <button type="submit">Submit</button>  
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+<p align="center">&copy; 2023,ink&threads.com</p>
+</footer>
+</body>
+</html>
